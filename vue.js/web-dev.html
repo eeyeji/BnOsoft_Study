@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- div#app -->
+    <div id="app">
+        <!-- HELLO WORLD -->
+    </div>
+    
+    <script>
+                  /*$('#app'); 즉, jquery 선택자와 동일한 역할 */
+        var div = document.querySelector('#app');
+        var str = "HELLO WORLD";
+
+        /* 위의 div태그의 정보를 출력하게 됨 */
+        //console.log(div);
+
+        /* HTML DIV태그 안에다가 입력해도 되지만 아래와 같이 해도 됨 */
+        
+        /* 해당태그의 정보 받아오기.innerHTML = "출력문" or 변수명; */
+        /* div.innerHTML = "HELLO WORLD";*/
+        div.innerHTML = str;
+
+        /* 갱신된 값을 반영하기 위해선 아래와 같은 작업 거쳐야함 */
+        str  = "hello world!!!";
+        /* 해당 태그에 다시한번 변경내용(갱신된 값)을 대입을 해줘야함*/
+        div.innerHTML = str;
+
+    </script>
+</body>
+</html>

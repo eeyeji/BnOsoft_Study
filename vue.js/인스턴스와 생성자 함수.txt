@@ -1,0 +1,37 @@
+//생성자함수:  앞글자 대문자
+function 생성자함수(){
+    인자
+}
+
+사람의 정보를 인자로 받아서 사람의 정보를 계속해서 인스턴스로 찍어낼 수 있다.
+
+
+function Person(name, job){
+    this.name = name;
+    this.job =job;
+}
+
+new Person('josh', 'developer');
+>>Person {name: "josh", job: "developer"}
+
+//p라는 객체에다가 넣어봄
+var p = new Person('josh', 'developer');
+
+p
+>>Person {name: "josh", job: "developer"}
+
+-----------------------------------------------------
+
+//생성자 함수를 이용하여 미리 logText라는 속성의 함수를 넣어놈
+function Vue(){
+    this.logText =function(){
+        console.log('hello');
+    }
+}
+
+//vm으로 new Vue를 생성할 때마다(생성자 함수로 객체를 찍어낼 때마다) 객체 안에는 미리 정의해 놓은 logText라는 함수가 들어가 있음
+var vm = new Vue();
+
+//즉, 매번 함수를 정의하는 것이 아니라 미리 정의된 함수를 가져다가 사용할 수 있다.
+vm.logText();
+>>hello
