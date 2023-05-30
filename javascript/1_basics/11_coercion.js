@@ -62,7 +62,7 @@ console.log('----------------------');
 
 /**
  * 1) 아무 글자도 없는 String
- * 1) 값이 없는 경우 - null, undefined...
+ * 2) 값이 없는 경우 - null, undefined...
  * 3) 0
  * 
  * >> 모두 false를 반환한다
