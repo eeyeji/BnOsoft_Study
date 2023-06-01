@@ -21,3 +21,5 @@ function runner(){
     } //finally는 써도 되고 안써도 됨
 }
 runner();
+
+
