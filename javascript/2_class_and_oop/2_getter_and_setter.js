@@ -25,7 +25,9 @@ class IdolModel{
      * setter
      * 1) 값을 새로 저장할 때 사용
      * 정의한 값을 변환할 수 없다.
+     * 무조건 파라미터 한개를 받아야한다.
      */
+            //파라미터
     set setName(name){
         this.name = name;
     }
