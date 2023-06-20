@@ -17,7 +17,7 @@ class IdolModel{
 }
 
 class FemaleIdolModel extends IdolModel{
-    //노래, 춤...을 적을 수 있는 프롬프트(prompt)
+    //노래, 춤...을 적을 수 있는 프로퍼티
     part;
 
     constructor(name, year, part){
