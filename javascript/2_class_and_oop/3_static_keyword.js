@@ -28,6 +28,9 @@ console.log('------------------------------------')
 
 /**
  * factory constructor
+ * 단순히 하나의 constructor형태로만 instance를 반환받지 않고
+ * 미리 어떤 데이터를 입력받아 instance를 만들지
+ * template화 해서 정의를 해놓을 수 있는 장점이 있다.
  * 
  */
 
