@@ -13,6 +13,8 @@
     <!-- 
       app-header를 기준으로 상위 컴포넌트는 Root
       Root의 데이터 이름은 message
+
+      프롭스 속성 이름은 app-header라는 태그의 내용에다가 정의
     -->
     <app-header v-bind:propsdata="message"></app-header>
     <app-content v-bind:propsdata="num"></app-content>
